@@ -6,7 +6,9 @@ authors = [
     { name = "Takahito Urai", email = "uraitakahito@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "hello-python-add",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -16,3 +18,6 @@ build-backend = "hatchling.build"
 dev = [
     "pytest>=8.3.5",
 ]
+
+[tool.uv.sources]
+hello-python-add = { git = "https://github.com/uraitakahito/hello_python_add" }

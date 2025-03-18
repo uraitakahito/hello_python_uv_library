@@ -12,9 +12,17 @@ wheels = [
 ]
 
 [[package]]
+name = "hello-python-add"
+version = "0.1.0"
+source = { git = "https://github.com/uraitakahito/hello_python_add#6fe687d8ea8f2d4a56529a497b67ca7fc59494e6" }
+
+[[package]]
 name = "hello-python-uv-library"
 version = "0.1.0"
 source = { editable = "." }
+dependencies = [
+    { name = "hello-python-add" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -22,6 +30,7 @@ dev = [
 ]
 
 [package.metadata]
+requires-dist = [{ name = "hello-python-add", git = "https://github.com/uraitakahito/hello_python_add" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=8.3.5" }]
