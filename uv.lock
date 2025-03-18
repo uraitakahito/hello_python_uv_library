@@ -18,7 +18,7 @@ source = { git = "https://github.com/uraitakahito/hello_python_add#6fe687d8ea8f2
 
 [[package]]
 name = "hello-python-uv-library"
-version = "0.1.1"
+version = "0.1.2"
 source = { editable = "." }
 dependencies = [
     { name = "hello-python-add" },

@@ -1,5 +1,5 @@
-from hello_python_uv_library import aisatsu
+from hello_python_uv_library import greetings
 
 
 def test_hello():
-    assert aisatsu.hello() == "Hello, Python UV Library!"
+    assert greetings.hello() == "Hello, Python UV Library!"
